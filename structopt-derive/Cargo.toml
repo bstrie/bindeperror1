@@ -1,0 +1,11 @@
+[package]
+name = "structopt-derive"
+version = "0.0.0"
+edition = "2021"
+
+[dependencies]
+syn = { path = "../syn", features = ["parsing"] }
+proc-macro-error = { path = "../proc-macro-error" }
+
+[lib]
+proc-macro = true

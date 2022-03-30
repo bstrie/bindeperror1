@@ -1,0 +1,9 @@
+[package]
+name = "mycrate"
+version = "0.0.0"
+edition = "2021"
+
+[dependencies]
+structopt-derive = { path = "structopt-derive" }
+#mybindep = { path = "mybindep", artifact = "bin" } # works
+mybindep = { path = "mybindep", artifact = "bin", target = "x86_64-unknown-linux-gnu" } # doesn't
